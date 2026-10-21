@@ -12,21 +12,15 @@ window.PHONE = {
 
   /* 전화번호부 */
   contacts: [
-    { name: "엄마", number: "+82 11-234-5678", intl: true },        // intl = 한국 번호 (국제전화 표시)
-    { name: "아빠", number: "+82 11-9021-4417", intl: true },
-    { name: "오빠", number: "+82 2-764-3318", intl: true },
-    { name: "수일이 형", number: "+82 16-345-6789", intl: true },
-    { name: "Jake", number: "(213) 555-0142" },
-    { name: "Ethan Miller", number: "(213) 555-0178" },
-    { name: "Ryan", number: "(310) 555-0116" },
-    { name: "Marcus Lee", number: "(213) 555-0193" }
-  ],
+    { name: "엄마", number: "+81 80-0508-4417", intl: true },        // intl = 한국 번호 (국제전화 표시)
+    { name: "아빠", number: "+81 80-9021-4417", intl: true },
+    { name: "오빠", number: "+81 80-0424-4417", intl: true },
 
   /* 통화목록 (날짜순 자동 정렬). dir = in(받은) · out(건) · missed(부재중), seen = 이미 확인한 부재중
-     talk 가 있으면 누를 때 통화 녹음처럼 대화가 한 줄씩 나옴 (me: true = 민재). 화면을 한 번 누르면 끝까지 바로 */
+     talk 가 있으면 누를 때 통화 녹음처럼 대화가 한 줄씩 나옴 (me: true = 엄마). 화면을 한 번 누르면 끝까지 바로 */
   calls: [
-    /* ── 아빠 (민재는 존댓말) ── */
-    { name: "아빠", dir: "in", when: "94/03/01 21:30", dur: "1:58", talk: [
+    /* ── 엄마 (미야코는 존댓말) ── */
+    { name: "엄마", dir: "in", when: "06/05/09 21:30", dur: "1:58", talk: [
       { t: "탑승 수속은 끝났냐?" },
       { me: true, t: "네, 아빠. 이제 들어가려고요." },
       { t: "가서 한눈팔지 말고 공부만 해라." },
