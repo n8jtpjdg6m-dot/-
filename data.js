@@ -4,8 +4,8 @@
    ========================================================= */
 
 window.PHONE = {
-  owner: "강민재",
-  date: "1994-12-08",        // 휴대폰 속 날짜 (YYYY-MM-DD)
+  owner: "東美夜子",
+  date: "2006-05-09",        // 휴대폰 속 날짜 (YYYY-MM-DD)
   time: "23:40:00",          // 처음 연 순간의 시각. 이후 실제 시간만큼 흘러감
   battery: 2,                // 배터리 칸 수 (0~3)
   banner: "",                // 대기화면 문구 (비우면 표시 안 함)
@@ -14,7 +14,7 @@ window.PHONE = {
   contacts: [
     { name: "엄마", number: "+82 11-234-5678", intl: true },        // intl = 한국 번호 (국제전화 표시)
     { name: "아빠", number: "+82 11-9021-4417", intl: true },
-    { name: "할아버지", number: "+82 2-764-3318", intl: true },
+    { name: "오빠", number: "+82 2-764-3318", intl: true },
     { name: "수일이 형", number: "+82 16-345-6789", intl: true },
     { name: "Jake", number: "(213) 555-0142" },
     { name: "Ethan Miller", number: "(213) 555-0178" },
