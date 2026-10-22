@@ -63,8 +63,8 @@ body.big .lcd:after{background:repeating-linear-gradient(rgba(0,0,0,.05) 0 1px,t
 .bat:after{content:"";position:absolute;right:-3px;top:1.5px;width:2px;height:3px;background:currentColor}
 .bat i{position:absolute;top:1px;bottom:1px;width:3px;background:currentColor}
 
-@font-face{font-family:"Galmuri11";src:url("fonts/Galmuri11.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Galmuri11";src:url("fonts/Galmuri11-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Galmuri11";src:url("Galmuri11.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Galmuri11";src:url("Galmuri11-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
 /* ── 큰 액정: 흰색·회색·파랑 (2000년대 초 STN 컬러 액정) ── */
 :root{--ink:#14206b;--ink2:#3c4a8f;--lav1:#dfe5f8;--lav2:#b9c5ee;--blue1:#6f86dc;--blue2:#2b3f9e;--navy:#18267a;--gray:#e8ebf2;--line:#9aa6d2}
 .lcd{background:var(--lav2);color:var(--ink)}
