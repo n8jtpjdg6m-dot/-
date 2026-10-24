@@ -45,7 +45,7 @@
     } else {
       const [y0, y1] = opened ? [-605, 625] : [-126, 650];   // 경첩 축 기준 위·아래 끝
       s = Math.min((vw - 24) / 370, (vh - 64) / (y1 - y0), 1.5);
-      tx = vw / 2; ty = vh / 2 - ((y0 + y1) / 2) * s - 6;
+      tx = vw / 2 + 40; ty = vh / 2 - ((y0 + y1) / 2) * s - 6;
     }
     tx += ox; ty += oy;
     wrap.classList.toggle("instant", !!instant);
