@@ -1,8 +1,10 @@
 (() => {
+  if (!window.PHONE) { document.body.insertAdjacentHTML("afterbegin", "<p style='color:red;position:fixed;z-index:99;top:0'>data.js 로드 실패</p>"); return; }
   const P = window.PHONE;
   const $ = s => document.querySelector(s);
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const wrap = $("#wrap"), flip = $("#flip"), lcd = $("#lcd"), hint = $("#hint"), closeBtn = $("#closeBtn");
+  Object.assign(wrap.style, { position: "absolute", left: "0px", top: "0px", transformOrigin: "0 0" });
   const TOUCH = matchMedia("(pointer: coarse)").matches;
 
   /* ================= 시간 ================= */
