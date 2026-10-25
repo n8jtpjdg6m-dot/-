@@ -6,7 +6,7 @@
 window.PHONE = {
   owner: "新妻美夜子",
   date: "2006-06-24",        // 휴대폰 속 날짜 (YYYY-MM-DD)
-  time: "19:40:00",          // 처음 연 순간의 시각. 이후 실제 시간만큼 흘러감
+  time: "09:40:00",          // 처음 연 순간의 시각. 이후 실제 시간만큼 흘러감
   battery: 2,                // 배터리 칸 수 (0~3)
   banner: "",                // 대기화면 문구 (비우면 표시 안 함)
 
@@ -111,88 +111,29 @@ window.PHONE = {
       { t: "아니, 그냥. 요즘 학교에서 통 못 본 것 같아서." },
       { me: true, t: "수업은 듣고 있는데." },
       { t: "아, 그렇지. 내가 못 봤나 보다." },
-      { t: "..." },
+      { t: "……" },
       { t: "저번에 말한 건 천천히 줘도 돼. 나도 당장 필요한 건 아니니까." },
       { me: true, t: "응. 알겠어." },
-      { t: "……그럼 나중에 보자." },
+      { t: "…그럼 나중에 보자." },
       { me: true, t: "그래." } ] },
-    { name: "수일이 형", dir: "out", when: "94/10/07 23:55", dur: "3:19", talk: [
-      { t: "민재야? 이 시간에 웬일이야." },
-      { me: true, t: "그냥… 형 목소리 듣고 싶어서." },
-      { t: "오늘따라 목소리가 안 좋다. 무슨 일 있어?" },
-      { me: true, t: "사실은…" },
-      { me: true, t: "……" },
-      { me: true, t: "아니야. 아무것도 아니야." },
-      { t: "민재야." },
-      { me: true, t: "진짜야. 그냥 좀 피곤해서 그래." } ] },
-    { name: "수일이 형", dir: "in", when: "94/11/13 21:05", dur: "6:41", talk: [
-      { t: "요즘은 좀 어때?" },
-      { me: true, t: "그냥… 그렇지 뭐." },
-      { t: "괜찮은 거지?" },
-      { me: true, t: "있잖아, 형…" },
-      { t: "응." },
-      { me: true, t: "……아니다. 다음에 얘기할게." },
-      { t: "그래. 다음에 꼭 해." } ] },
-    { name: "수일이 형", dir: "out", when: "94/12/03 00:05", dur: "4:08", talk: [
-      { me: true, t: "형, 나…" },
-      { t: "응, 말해." },
-      { me: true, t: "……" },
-      { me: true, t: "아니, 그냥. 형 잘 지내나 해서." },
-      { t: "민재야." },
-      { t: "힘들면 말해. 형한테는 아무 말이나 해도 돼." },
-      { t: "언제든 연락하고. 알았지?" } ] }
   ],
 
   /* 전화번호부에서 직접 걸었을 때의 대본 (없는 사람은 받지 않음) */
   scripts: {
     "엄마": [
-      { t: "어머, 미야코? 이 시간엔 웬일이니?" },
-      { me: true, t: "엄마, 우리 집 우편함 열어 봤어?" },
-      { t: "아니, 요 며칠 집에 못 가서 못 봤단다. 왜 그러니?" },
-      { me: true, t: "편지가 하나 와 있던데." },
-      { t: "그래? 누구한테서 온 거니?" },
-      { me: true, t: "모르겠어. 받는 사람 이름만 적혀 있어." },
-      { t: "그럼 식탁 위에 올려 두렴. 다음에 가서 볼게." } ],
+      { t: "여보세요? 미야코니?" },
+      { me: true, t: "응." },
+      { t: "벌써 나갔니? 아침은 먹고 나갔고?" },
+      { me: true, t: "아직." },
+      { t: "그래도 챙겨 먹으렴. 오늘은 엄마가 일찍 나가야 해서 집에 없을거야." },
+      { me: true, t: "응. 알았어." },
+      { t: "조심해서 다녀오렴." } ],
     "아빠": [
       { t: "무슨 일이냐?" },
       { me: true, t: "아빠, 시가현은 눈 와?" },
       { t: "비가 좀 오네. 너는 웬일이냐?" },
       { me: true, t: "그냥 궁금해서." },
       { t: "그래. 별일 없으면 됐다." } ],
-    "수일이 형": [
-      { t: "민재야? 무슨 일 있어?" },
-      { me: true, t: "……" },
-      { t: "괜찮아. 말 안 해도 돼." },
-      { t: "준비되면 말해. 형 여기 있을게." } ],
-    "Jake": [
-      { t: "Who's this?", ko: "누구야?" },
-      { me: true, t: "……" },
-      { t: "Hello? …Oh shit, it's the slant-eyed monkey.", ko: "여보세요? …아 씨발, 그 째진 눈 원숭이 새끼네." },
-      { t: "Yo, guys! Yellow's calling me! Shut up, listen to him breathe!", ko: "야, 얘들아! 옐로우가 나한테 전화했어! 조용히 해 봐, 숨 쉬는 소리 들어 봐!" },
-      { me: true, t: "……" },
-      { t: "What'd you eat tonight, dog? I can smell it through the fucking phone.", ko: "오늘 저녁엔 뭐 처먹었냐, 개? 전화기 너머로도 냄새가 나." },
-      { t: "Get the fuck off my line, freak.", ko: "내 전화에서 꺼져, 괴물 새끼야." } ],
-    "Ethan Miller": [
-      { t: "What.", ko: "뭐." },
-      { me: true, t: "……" },
-      { t: "Are you fucking serious? The yellow nerd's calling my house now?", ko: "장난하냐? 이제 옐로우 범생이가 우리 집까지 전화를 해?" },
-      { t: "Who gave you this number, you rice-eating little rat?", ko: "이 번호 누가 줬어, 쌀이나 처먹는 쥐새끼야?" },
-      { me: true, t: "……" },
-      { t: "Call here again and I'll break every one of your fucking fingers. Then try dialing, monkey.", ko: "한 번만 더 걸면 손가락 전부 부러뜨려 줄게. 그 다음에 전화해 봐, 원숭이." } ],
-    "Ryan": [
-      { t: "Herro? Herro? Ching-chong?", ko: "헬로? 헬로? 칭챙총?" },
-      { me: true, t: "……" },
-      { t: "C'mon, say something in monkey. We're all listening, bookworm.", ko: "어서, 원숭이 말로 뭐라고 좀 해 봐. 다 듣고 있어, 범생아." },
-      { t: "Can't even talk. Pathetic. Your own parents shipped you off, you know that?", ko: "말도 못 하네. 한심해. 네 부모도 널 내다 버린 거 알지?" },
-      { me: true, t: "……" },
-      { t: "Nobody wants you here, yellow. Nobody wants you anywhere.", ko: "여기선 아무도 너 안 원해, 옐로우. 어디서도 아무도 안 원해." } ],
-    "Marcus Lee": [
-      { t: "You've got some balls calling me, monkey.", ko: "나한테 전화를 다 하고, 간이 부었네, 원숭이." },
-      { me: true, t: "……" },
-      { t: "What, you gonna rat us out? Go ahead. Nobody's gonna believe some yellow freak.", ko: "뭐, 꼰지르게? 해 봐. 옐로우 괴물 말을 누가 믿겠냐." },
-      { t: "You tell anyone, and you're fucking dead. You hear me?", ko: "누구한테든 말하면 넌 뒤졌어. 알아들어?" },
-      { me: true, t: "……" },
-      { t: "Tomorrow. Behind the gym. Don't make me come find you.", ko: "내일. 체육관 뒤. 내가 찾아가게 만들지 마." } ]
   },
 
   /* 정체 모를 번호: 키패드로 아무 번호나 누르면 이 번호로 연결됨. 처음 열고 3분 안에 못 찾으면 먼저 걸려 옴
@@ -256,20 +197,20 @@ window.PHONE = {
   /* 문자 답장: 보낼 때마다 replies 를 차례로 하나씩, 다 쓰면 loop 중 하나 (목록에 없는 사람은 답 없음) */
   msgReplies: {
     "엄마": { replies: [
-      "우리 아들 문자했네? 밥은 잘 챙겨 먹고 다니지?",
-      "엄마가 요즘 바빠서 연락 자주 못 해서 미안해. 공부는 할 만하니?",
-      "엄마는 우리 아들 믿어. 조금만 더 힘내자. 사랑해." ],
-      loop: ["엄마 지금 모임 중이라 이따 연락할게.", "감기 조심하고. 엄마가 또 연락할게."] },
+      "미야코, 오늘 비가 온다는데 조심하렴. 너무 늦지는 말고.",
+      "거기는 어디니? 위험한 곳은 아니지?",
+      "시간 날 때 답장 하나쯤은 해 주렴." ],
+      loop: ["그 일은 이제 너무 마음에 담아 두지 말렴.", "시간이 지나면 괜찮아질 거야."] },
     "아빠": { replies: [
-      "무슨 일이냐. 용건만 간단히 해라.",
-      "공부에 집중해라. 쓸데없이 문자 보내지 말고.",
-      "다들 힘들게 버티는 거다. 약한 소리 하지 마라." ],
-      loop: ["회의 중이다. 나중에 연락하마.", "알았다."] },
-    "수일이 형": { replies: [
-      "민재야! 문자 반갑다. 거긴 지금 밤이지?",
-      "요즘은 좀 어때? 별일 없고?",
-      "무슨 일 있으면 꼭 말해. 형이 시간 맞춰서 전화할게." ],
-      loop: ["형 여기 있어. 언제든 연락해.", "밥 꼭 챙겨 먹고. 형이 또 연락할게."] }
+      "바쁘다. 용건만 말해라.",
+      "그래, 건강 조심해라.",
+      "그쪽 일은 엄마가 알아서 하겠지. 너는 네 일이나 해라." ],
+      loop: ["지금 회의 중이다. 이따 답하마.", "알았다."] },
+    "○○○○": { replies: [
+      "아… 미야코? 번호 그대로였구나.",
+      "그때 갑자기 안 나와서 다들 좀 걱정했었어.",
+      "…무슨 일 있는 건 아니지?" ],
+      loop: ["다음에 시간 나면 연락할게."] }
   },
 
   /* 보낸 문자 */
